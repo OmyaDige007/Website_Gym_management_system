@@ -1,0 +1,328 @@
+body{
+    background-color: #111;
+   
+}
+.pricing {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+   
+  }
+  .disp{
+    display: none;
+  }
+  #myNumber{
+    font-size:100px;
+    text-align:center;
+    margin:50px auto;
+    font-family:Arial, sans-serif;
+}
+  
+  .pricing .information span {
+    font-size: 2rem;
+    color: #f00;
+  }
+  
+  .pricing .information h3 {
+    font-size: 4rem;
+    padding-top: .5rem;
+    color: #fff;
+  }
+
+  .pricing .information p {
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+  }
+
+  .pricing .information p i {
+    padding-right: 1rem;
+    color: #f00;
+  }
+
+  .pricing .plan {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .pricing .plan.basic {
+    background: linear-gradient(130deg, #111 93%, transparent 90%);
+  }
+
+  .pricing .plan h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #fff;
+  }
+
+  .pricing .plan .price {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #f00;
+  }
+
+  .pricing .plan .price span {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .pricing .plan .list {
+    padding: 1rem 0;
+  }
+
+  .pricing .plan .list p {
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+  }
+
+  .pricing .plan .list p i {
+    padding-right: 1rem;
+    color: #f00;
+  }
+  /* h3{
+    text-align: center;
+    color: #413b41;
+    
+    text-transform: uppercase;
+   
+    font-family: zen tokyo zoo;
+
+} */
+h5{
+    text-align: center;
+    color: #828282;
+    margin: 80px auto;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.7;
+    
+}
+/* .box{
+margin: 0;
+position: absolute;
+top:50%;
+-ms-transform: translateY(-50);
+transform: translateX(170%);
+  
+text-align: center;
+
+
+
+
+} */
+.buttonrr{
+    font-size: 1em;
+    padding: 15px 35px;
+    color:white;
+    text-decoration: none;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+   background: #403E3d;
+   border-radius: 50px;
+
+}
+.overlay{
+    position:sticky;
+    top:0;
+    bottom: 0;
+   width: 100%;
+    /* right: 200px; */
+    float: center;
+    background: rgba(0, 0, 0, 0);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+
+
+
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+    float: center;
+
+}
+.wrapper{
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+
+}
+.wrapper h2{
+    margin-top:0;
+    color:#333;
+
+}
+.wrapper .close{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#333;
+
+}
+/* form design */
+.cont{
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding:20px 0;
+
+
+}
+
+
+
+
+
+
+/* .container1{
+  width: 350px;
+  background: #fff;
+  padding: 30px;
+  position: relative;
+}
+h6{
+  font-size: 20px;
+  color: var(--text-color);
+}
+span{
+  position: absolute;
+  right: 34px;
+  top: 28px;
+  font-size: 18px;
+  color: var(--text-color);
+}
+h1{
+  padding: 30px 0px;
+  font-size: 40px;
+  color: var(--text-color);
+}
+form label{
+  color: var(--text-color);
+  text-transform: uppercase;
+  position: relative;
+  font-size: 10px;
+  word-spacing: 4px;
+}
+form select{
+  width: 100%;
+  outline: none;
+  border:none;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  text-transform: capitalize;
+  padding-top: 3px;
+  color: var(--text-color);
+  padding-bottom: 3px;
+  font-size: 18px;
+  margin-left: -3px;
+  margin-bottom: 20px;
+  background-color:transparent;
+}
+form #cardno{
+  width: 100%;
+  outline: none;
+  border:none;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  padding-top: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  color: var(--text-color);
+  font-size: 18px;
+  background-color:transparent;
+}
+.float{
+  display: flex;
+}
+#validtill, #cvv{
+  border: none;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  outline: none;
+  width: 130px;
+  padding-top: 14px;
+  margin-bottom: 56px;
+  color: var(--text-color);
+  background-color:transparent;
+  font-size: 18px;
+}
+p{
+  margin-left: 25px;
+  margin-bottom: 56px;
+  margin-top: -20px;
+  font-size: 16px;
+  text-transform: none;
+}
+.buttonA{
+  border: none;
+  outline: none;
+  background: rgb(233, 220, 220);
+  color: rgb(31, 30, 30);
+  width: 100%;
+  height:40px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+} */
+
+.thank-you-pop img{
+	width:76px;
+	height:auto;
+	margin:0 auto;
+	display:block;
+	margin-bottom:25px;
+}
+
+.thank-you-pop h1{
+	font-size: 42px;
+    margin-bottom: 25px;
+	color:#5C5C5C;
+}
+.thank-you-pop p{
+	font-size: 20px;
+    margin-bottom: 27px;
+ 	color:#5C5C5C;
+}
+.thank-you-pop h3.cupon-pop{
+	font-size: 25px;
+    margin-bottom: 40px;
+	color:#222;
+	display:inline-block;
+	text-align:center;
+	padding:10px 20px;
+	border:2px dashed #222;
+	clear:both;
+	font-weight:normal;
+}
+.thank-you-pop h3.cupon-pop span{
+	color:#03A9F4;
+}
+.thank-you-pop a{
+	display: inline-block;
+    margin: 0 auto;
+    padding: 9px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #8BC34A;
+    border-radius: 17px;
+}
+.thank-you-pop a i{
+	margin-right:5px;
+	color:#fff;
+}
+#ignismyModal .modal-header{
+    border:0px;
+}
+/*--thank you pop ends here--*/

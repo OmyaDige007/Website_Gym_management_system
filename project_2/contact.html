@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>Shambhavi Enterprises </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+<script src="https://kit.fontawesome.com/2c01c66b75.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+}
+
+ body{
+
+    color: gray;
+    /* background-image: url("bg.jpg"); */
+    background-size: 100%;
+} 
+header{
+
+    border: 1px solid black;
+    background-color: black;
+    opacity: 0.8;
+    } 
+nav{
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+
+nav h1{
+    font-size: 50px;
+}
+
+nav span{
+    color: red;
+}
+
+ul button{
+    width: 100px;
+    height: 34px;
+    background-color: rgb(239, 48, 48);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+ul{
+    display:flex;
+    list-style: none;
+}
+
+ul li a{
+    margin-inline: 30px;
+    font-size: 25px;
+}
+
+.b:hover{
+    border-bottom: 2px solid blue;
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 27px;
+}
+
+.a{
+    border-bottom: 4px solid blue;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <h1><span>Fit</span> N <span>Fine</span></h1>
+       <ul>
+          <li class="b"><a href="Home.html">Home</a></li>
+          <li class="b"><a href="AboutUs.html">About Us</a></li>
+          <li class="b"><a href="login.html">Login</a></li>
+          <li class="a"><a href="contact.html">Contact Us</a></li>
+          <button ><a href="https://smashingfifty.com/benefits-of-joining-a-gym-20-reasons-to-sign-up/">Learn More</a></button>
+       </ul>
+      </nav>
+     </header>
+		<br>
+		<div id="social">
+			
+			<i class="fa-brands fa-instagram fa-fade fa-lg " style="color: black;"></i>&nbsp;&nbsp;&nbsp;
+				<i class="fa-brands fa-linkedin fa-fade fa-lg " style="color: black;"></i>&nbsp;&nbsp;&nbsp;
+			   <i class="fa-brands fa-facebook fa-fade fa-lg " style="color: black;"></i>&nbsp;&nbsp;&nbsp;
+			   
+		</div>
+
+		<div id="right">
+		
+			<div id="content" >
+				<div id="contact">
+                    <div class="row">
+                        <div class="col-md-6 p-1 bg-danger" >
+                            <h1>CONTACT US</h1>
+                            <h3><i>Address:</i></h3>
+                            <h4>Fit N Fine</h4>
+                            <h4> 007</h4>
+                            M.G Road,<br>
+                            Satara,415011<br>
+
+                <h5>Tel.no:<a href="tel.no:#">+91 1222452224</a></h5>
+                <h5>Mob.no<a href="mob.no:#">+91 9021981101</a></h5>
+                <h5>Email id:<a href="Email id:#">omrdige@gmail</a><h4>
+                <h3><i class="text-danger tect-center">Thank you........</i></h3><br>
+                        </div>
+                        <div class="col-md-6 p-1 bg-info" >
+                            <h1>general Enquiries</h1>
+                            <br>
+                            <div>
+                                <form name="f1" action="#" >
+                                    <div class="mb-3">
+                                        <label for="clientemail" class="form-label">Name</label>
+                                        <input type="text" class="form-control"  id="txtName" onkeypress="return TextValidate(event);"
+                                         aria-describedby="emailHelp">
+
+                                         <span id="lblError2" style="color: red"></span>
+                                    </div>
+                                    
+                                    
+                                    <div class="mb-3">
+                                        <label for="clientemail" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="txtEmail" onkeyup="ValidateEmail();" name="text1" aria-describedby="emailHelp">
+                                        <div><span id="lblError" style="color: red"></span></div>
+                                        <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="clientphone" class="form-label">Phone</label>
+                                        <input type="Phone" class="form-control" id="txtm" maxlength="10">
+                                        <span id="lblError1" style="color: red"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="clientemail" class="form-label">Type your Message...</label>
+                                        <input type="enquiry" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                                    </div>
+                
+                
+                                    <div class="mb-3" id="form-check">
+                                       
+                                        <!-- <label class="form-check-label" for="isclient">You want to work on a project with me</label> -->
+                                    </div>
+                                    <div class="text-center mb-1">
+                                        <button type="submit" class="btn btn-primary"  name="validate">Send</button>
+
+                                    </div>
+                
+                                </form>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		
+			<div id="footer">
+			<br>
+				<p class="center">Address -401, Om Residency, Near Gawali Hospital, Rabale, Navi Mumbai - 400701</p>
+				
+					<div id="footer-left">
+					<br>
+					<p>&copy; Fit N Fine </p>
+					</div>
+					
+					<div id="footer-right">
+					<br>
+					<p>Design And Developed By
+						<span class="text-info">Omkar</span>
+					</p>
+					</div>
+			
+			</div>
+			
+		</div>
+	
+	</div>
+	<script>
+        //email
+        function ValidateEmail() {
+        var email = document.getElementById("txtEmail").value;
+        var lblError = document.getElementById("lblError");
+        lblError.innerHTML = "";
+        var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (!expr.test(email)) {
+            lblError.innerHTML = "Invalid email address.";
+        }
+    }
+     
+//name
+
+function TextValidate(e) {
+        var keyCode = e.keyCode || e.which;
+        var lblError2 = document.getElementById("lblError2");
+        lblError2.innerHTML = "";
+        //Regex for Valid Characters i.e. Alphabets.
+        var regex = /^[A-Za-z]+$/;
+        //Validate TextBox value against the Regex.
+        var isValid = regex.test(String.fromCharCode(keyCode));
+        if (!isValid) {
+            lblError2.innerHTML = "Only Alphabets allowed.";
+        }
+        return isValid;
+    }
+
+//mobile
+$(function () {
+        $("#txtm").keypress(function (e) {
+        var keyCode = e.keyCode || e.which;
+        $("#lblError1").html("");
+            //Regex for Valid Characters i.e. Numbers.
+            var regex = /^[0-9]+$/;
+            //Validate TextBox value against the Regex.
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            if (!isValid) {
+                $("#lblError1").html("Only Numbers allowed.");
+            }
+            return isValid;
+        });
+    });
+
+    </script>
+
+
+</body>
+</html>

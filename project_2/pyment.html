@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+    <script src="https://kit.fontawesome.com/2c01c66b75.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="pyment.css">
+
+
+    <!-- <script>
+        function cardspace(){
+       var carddigit = document.getElementById('cardno').value;
+if(carddigit.length == 4 || carddigit.length == 9 || carddigit.length == 14){
+       document.getElementById('cardno').value = carddigit+' ';
+       document.getElementById('cardno').max = 1;
+}
+}
+
+function addSlashes(){
+       var expire_date = document.getElementById('validtill').value;
+       if(expire_date.length == 2){
+              document.getElementById('validtill').value = expire_date+'/';
+              document.getElementById('validtill').max = 1;
+}
+}
+    </script> -->
+</head>
+<body>
+    <div class="container">
+    <section class="pricing" id="pricing">
+
+        <div class="information">
+            <span>Pricing plan</span>
+            <h3>Affordable pricing plan for your</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum quae, rerum optio mollitia! Tempora?</p>
+            <p> <i class="fas fa-check"></i> cardio exercise </p>
+            <p> <i class="fas fa-check"></i> weight lifting </p>
+            <p> <i class="fas fa-check"></i> diet plans </p>
+            <p> <i class="fas fa-check"></i> overall results </p>
+            <a href="#" class="btn">All pricing</a>
+        </div>
+    
+        <div class="plan basic">
+            <h3>Basic plan</h3>
+            <div class="price"><span>$</span>30<span>/mo</span></div>
+           <div class="list">
+            <p> <i class="fas fa-check"></i> personal training </p>
+            <p> <i class="fas fa-check"></i> cardio exercise </p>
+            <p> <i class="fas fa-check"></i> weight lifting </p>
+            <p> <i class="fas fa-check"></i> diet plans </p>
+            <p> <i class="fas fa-check"></i> overall results </p>
+           </div>
+           <div class="boxk"  >
+            <a style="background-color: red;" href="#divone" class="buttonrr">get started</a>
+    
+        </div>
+        </div>
+
+        <div class="plan">
+            <h3>Premium plan</h3>
+            <div class="price"><span>$</span>90<span>/mo</span></div>
+           <div class="list">
+            <p> <i class="fas fa-check"></i> personal training </p>
+            <p> <i class="fas fa-check"></i> cardio exercise </p>
+            <p> <i class="fas fa-check"></i> weight lifting </p>
+            <p> <i class="fas fa-check"></i> diet plans </p>
+            <p> <i class="fas fa-check"></i> overall results </p>
+           </div>
+           <div class="boxk"  >
+            <a style="background-color: red;" href="#divone1" class="buttonrr">get started</a>
+    
+        </div>
+        </div>
+        <div class="disp">
+    </section>
+
+    
+    <div class="overlay" id="divone1">
+        <div class="wrapper">
+           
+          <a href="#" class="close">&times;</a>
+            <div class="content">
+                <div class="cont">
+                   
+                      </div>
+                    <form  > 
+                        <tr>
+                        <div class="mb-3">
+                            <h1>Payment Method</h1>
+                          <label for="exampleInputEmail1" class="form-label">Country
+                            <select name="country">
+                                <option value="">USA</option>
+                                <option value="">India</option>
+                                <option value="">England</option>
+                            </select>
+                          </label>
+                          <label for="cardno">Card Number
+                            <input type="text" class="form-control" id="exampleInputEmail1" maxlength="19" onkeypress="cardspace()">
+                          </label>
+                        </div>
+                        <div class="float">
+                            <label for="validtill">Valid till
+                                <input type="text" class="form-control" id="exampleInputEmail1" maxlength="7" onkeypress="addSlashes()">
+                            </label>
+    
+    
+                            <label for="cvv">Cvv
+                                <input type="text" class="form-control" id="exampleInputEmail1" maxlength="3">
+                            </label>
+                        </div>
+                    </tr>
+                    <tr>
+                        <label for="checkbox">
+                            <input type="checkbox" required>
+                            <p>Payment Address is the same as the Delivery Address</p>
+                        </label>
+                       
+                        <!-- <button onclick="msg()" >Pay 90$</button> -->
+                        <button class="btn btn-primary" data-toggle="modal" href="#ignismyModal">Pay90$</button>
+                    </tr>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+<div class="overlay" id="divone">
+    <div class="wrapper">
+       
+      <a href="#" class="close">&times;</a>
+        <div class="content">
+            <div class="cont">
+               
+                  </div>
+                <form  >
+                    <tr>
+                        
+                    <div class="mb-3">
+                        <h1>Payment Method</h1>
+                        
+                        <br>
+                      <label for="exampleInputEmail1" class="form-label">Country
+                        <select name="country">
+                            <option value="">USA</option>
+                            <option value="">India</option>
+                            <option value="">England</option>
+                        </select>
+                      </label>
+                      <label for="cardno">Card Number
+                        <input type="text" name="Card" class="form-control" id="exampleInputEmail1" maxlength="19" onkeypress="cardspace()">
+                      </label>
+                    </div>
+                    <div class="float">
+                        <label for="validtill">Valid till
+                            <input type="date" class="form-control" id="exampleInputEmail1" maxlength="7" onkeypress="addSlashes()">
+                        </label>
+
+
+                        <label for="cvv">Cvv
+                            <input type="text" class="form-control" id="exampleInputEmail1" maxlength="3">
+                        </label>
+                    </div>
+                </tr>
+                <tr>
+                    <label for="checkbox">
+                        <input type="checkbox" required>
+                        <p>Payment Address is the same as the Delivery Address</p>
+                    </label>
+                   
+                    <!-- <input type="submit" value="Pay30$" onclick="msg()"> -->
+                    <button class="btn btn-primary" data-toggle="modal" href="#ignismyModal">Pay30$</button>
+                </tr>
+              
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--Model Popup starts-->
+<div class="container">
+    <div class="row">
+        <!-- <a class="btn btn-primary" data-toggle="modal" href="#ignismyModal">open Popup</a> -->
+        <div class="modal fade" id="ignismyModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
+                     </div>
+					
+                    <div class="modal-body">
+                       
+						<div class="thank-you-pop">
+							<img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+							<h1>Thank You!</h1>
+							<p>Your Paymet Succesfully!</p>
+							<h3 class="cupon-pop">Transation Id: <span>737865</span>
+                            </div></h3>
+							
+ 						</div>
+                         
+                    </div>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Model Popup ends-->
+</div>
+</body>
+<script>
+function msg()
+{
+    alert("Payment Succesfully",'Card');
+}
+function showRandomNumber(){
+                document.getElementById("#myNumber").innerHTML = rando(5, 10);
+            }
+</script>
+</html>

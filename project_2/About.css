@@ -1,0 +1,155 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+ body{
+
+   background-color: black;
+    /* background-image: url("img1.jpg"); */
+    background-size: 100%;
+    color: white;
+    display: block;
+} 
+header{
+
+    border: 1px solid black;
+    background-color: black;
+    opacity: 0.8;
+    } 
+nav{
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+
+nav h1{
+    font-size: 50px;
+}
+
+nav span{
+    color: red;
+}
+
+ul button{
+    width: 100px;
+    height: 34px;
+    background-color: rgb(239, 48, 48);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+ul{
+    display:flex;
+    list-style: none;
+}
+
+ul li a{
+    margin-inline: 30px;
+    font-size: 25px;
+}
+
+.b:hover{
+    border-bottom: 2px solid blue;
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 27px;
+}
+
+.a{
+    border-bottom: 4px solid blue;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem; 
+}
+.content{
+    flex: 1 1 42rem;
+}
+.image{
+    flex: 1 1 42rem;
+    position: relative;
+
+}
+/* &::before,
+&::after{
+    content: '';
+    position:absolute;
+    z-index: -1;
+    background:red;
+    height:15rem;
+    width:15rem;
+}
+&::before{
+    top: 0;
+    left: 0;
+
+}
+
+&::after{
+   bottom: 0;
+    right: 0;
+} */
+img{
+   margin-left: 120px;
+    height: 550px;
+    padding: 2rem;
+    width: 400px;
+}
+
+.content{
+    flex: 1 1 42rem;
+
+}
+#span{
+font-size:2rem ;
+color: red;
+}
+.title{
+    font-size: 4rem;
+    color: white;
+    margin-top: .5rem;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.box{
+    flex: 1 1 20rem;
+
+}
+
+
+h3{
+       font-size: 2rem;
+       color: white; 
+}
+i{
+    padding-right: 1.5rem;
+    color: red;
+}
+/* p{
+    font-size: 4rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 2;
+} */
+.btn{
+    width: 110px;
+    height: 34px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
